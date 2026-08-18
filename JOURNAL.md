@@ -15,10 +15,19 @@
 **Next**
 - Docker fundamentals: image vs container, layers, volumes
 
-## 2026-08-11
+## 2026-08-18
 
 **Done**
 - Repo initialized: .gitignore, ReADME, journal
+- Renamed branch to main, set as global default
+- Configured git identity with GitHub noreply email
+- SSH key (ed25519) generated and added to GitHub
+- Remote connected, first push done
+
+**Learned**
+- `git add` stages, `git commit` snapshots what's staged — two steps on purpose
+- The commit message is free text; `add` is a convention, not a command
+- Public key is meant to be shared; the private one never leaves the machine
 
 **Next**
 - Docker: Dockerfile, volumes, 'docker exec'
