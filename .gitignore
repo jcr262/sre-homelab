@@ -1,0 +1,18 @@
+# Credentials
+*.pem
+*.key
+kubeconfig
+*kubeconfig*
+.env
+.envrc
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+
+# Cloud
+.aws/
+credentials
+*.publishsettings
