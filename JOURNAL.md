@@ -31,3 +31,37 @@
 
 **Next**
 - Docker: Dockerfile, volumes, 'docker exec'
+
+## 2026-08-20
+
+**Done**
+- Docker installed from official repo (apt install docker is a different package)
+- Rootless usage via docker group
+- hello-world running
+
+**Learned**
+- Exited means stopped, not deleted — the container still holds its filesystem and logs
+- One image, many containers: each `docker run` creates a new instance
+- `docker rm` removes containers, `docker rmi` removes the image
+
+**Next**
+- nginx: a container that stays running. Ports, logs, `docker exec`
+- Then Dockerfile and volumes
+
+## 2026-08-23
+
+**Done**
+- nginx container: ports, logs, `docker exec`
+- Volumes: host directory mounted into the container
+
+**Learnerd**
+- nginx image has no 'ps' - images ship only what the process needs
+- Inside the container nginx is PID 1; on the host it's another PID. Same process, two namespaces
+- If PID 1 dies, the container dies
+- Without '-v', data lives in the continainer's write layer and dies with it
+- With '-v', data outlives the container - same idea as a PVC
+- K8s splits what Docker does with the one flag: PVC (request), PV (storage), StorageClass (provisioner)
+
+**Next**
+- Dockerfile: build my own image, see layers
+- Then PostgreSQL
