@@ -65,3 +65,18 @@
 **Next**
 - Dockerfile: build my own image, see layers
 - Then PostgreSQL
+
+## 2026-09-07
+
+**Done**
+- After completing Kubernetes course, created new folder
+- Created new namespaces for public and private APIs
+
+**Learned**
+- 'k apply' needs '-f' per file: '-f .' applues a whole directory
+- When apply fails on args, nothing is applied - validation happens before touching the cluster
+- `--dry-run` output includes empty `spec: {}` and `status: {}` — `status` should never be in a manifest, the cluster writes it
+
+
+**Next**
+- Deployment and Service, written by hand (Thursday, 1.5h)
