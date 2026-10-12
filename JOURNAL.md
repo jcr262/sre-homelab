@@ -99,8 +99,14 @@ Rule: never two misses in a row.
 ## 2026-10-11
 
 **Done**
-- Cluster backup, 3/3 nodes Ready (no IP chage this time)
-- Namespaces public and private applied
+- Cluster backup, 3/3 nodes Ready. Namespaces public and private applied.
+- Deployment 'n-app' written by hand, 2 replicas, scheduled across w1 and w2
+
+**Learned**
+- selector.matchLabels must match template.metadata.labels
+- Scheduer spreads replicas across nodes by default
+- Pod name = deployment + replicaset hash + random stuff
+- Each node owns a pod IP range (10.42.1.x, 10.42.2.x)
 
 **Next**
-- Deployment written by hand (Oct 18)
+- Service(Oct 18)
