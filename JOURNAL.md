@@ -80,3 +80,27 @@
 
 **Next**
 - Deployment and Service, written by hand (Thursday, 1.5h)
+
+## Schedule — Phase 1 (Sep 14 – Oct 11)
+
+- Mon 8:30pm — 45 min
+- Tue 6–10pm — Terraform course
+- Thu 8:30pm — 45 min
+- Sat 8:30pm — 1.5 h
+- Sun 8:30pm — 1.5 h
+
+Target: 20 of 20 sessions. Minimum session = 15 min (journal + commit).
+Rule: never two misses in a row.
+
+**Learned**
+
+- Noticed improvement opportunities to follow plan.
+
+## 2026-10-11
+
+**Done**
+- Cluster backup, 3/3 nodes Ready (no IP chage this time)
+- Namespaces public and private applied
+
+**Next**
+- Deployment written by hand (Oct 18)
